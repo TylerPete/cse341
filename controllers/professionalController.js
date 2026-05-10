@@ -8,7 +8,8 @@ const getData = async (req, res, next) => {
     dataObj.professionalName = "professionalName"
     dataObj.base64Image = "base64Image"
     dataObj.primaryDescription = "primaryDescription"
-    dataObj.workDescription1 = "workDescription2"
+    dataObj.workDescription1 = "workDescription1"
+    dataObj.workDescription2 = "workDescription2"
     dataObj.linkTitleText = "linkTitleText"
     dataObj.nameLink = {
         firstName: "firstName",

@@ -1,9 +1,11 @@
 const express = require("express");
 const professionalRoute = require("./routes/professional");
+const cors = require("cors");
 const env = require("dotenv").config();
 
-
 const app = express();
+app.use(cors());
+
 app.use("/professional", professionalRoute);
 
 

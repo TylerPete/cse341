@@ -23,7 +23,7 @@ const getData = async (req, res, next) => {
         link: "link"
     }
 
-    return dataObj;
+    res.json(dataObj);
 };
 
 

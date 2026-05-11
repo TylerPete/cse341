@@ -1,4 +1,4 @@
-const mongodb = require("./database/connect");
+const mongodb = require("../database/connect");
 
 const getData = async (req, res, next) => {
     //send hardcoded object with professional attributes needed

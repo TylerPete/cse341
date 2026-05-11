@@ -1,20 +1,21 @@
 const express = require("express");
 const professionalRoute = require("./routes/professional");
+const bodyParser = require("body-parser")
+const MongoClient = require("mongodb").MongoClient;
+const mongodb = require("./database/connect");
 const cors = require("cors");
 const env = require("dotenv").config();
-
-// const MongoClient : typeof MongoClient = require("")
-//  const mongodb = require("./db/connect");
 
 
 const app = express();
 app.use(cors());
+app.use(bodyParser.json())
 
 app.use("/professional", professionalRoute);
 
 
 
-const port : string | 8080 = process.env.PORT || 8080;
+const port = process.env.PORT || 8080;
 const host = process.env.HOST;
 
 
